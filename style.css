@@ -851,6 +851,7 @@ button {
 
 .product-card:hover .product-card__image--primary,
 .product-card:focus-within .product-card__image--primary {
+  opacity: 0;
   transform: scale(1.02);
 }
 
