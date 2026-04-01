@@ -196,7 +196,7 @@ const featuredProduct = {
   title: "Burgundy Jacket",
   price: "GEL3,547",
   href: `${site}/products/burgundy-jacket`,
-  primary: `${site}/cdn/shop/files/0V4A7298.jpg?v=1774820784&width=1400`
+  primary: "assets/section.webp"
 };
 
 const panels = Array.from(document.querySelectorAll("[data-panel]"));
