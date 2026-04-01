@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Discover a curated selection of independent designers, jewelry, accessories, clothing, bags, and beauty."
+  >
+  <title>MORE is LOVE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar" aria-label="Store announcements">
+    <div class="announcement-bar__inner">
+      <p class="announcement-bar__message is-active" data-announcement-message>SALE - UP TO 80%</p>
+      <p class="announcement-bar__message" data-announcement-message>WORLDWIDE DELIVERY</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header__inner container container--wide">
+      <button
+        class="icon-button icon-button--menu"
+        type="button"
+        aria-label="Open navigation"
+        data-open-panel="menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a class="brand" href="#top" aria-label="MORE is LOVE">
+        <img
+          src="https://www.moreislove.com/cdn/shop/files/moreislove.logo_d0651750-71a5-4c83-a5fd-03df7e845244.png?v=1769426607&width=900"
+          alt="MORE is LOVE"
+        >
+      </a>
+
+      <nav class="header-nav" aria-label="Secondary navigation">
+        <a href="https://www.moreislove.com/customer_authentication/redirect?locale=en&region_country=KG">Login</a>
+        <a href="#" data-open-panel="search">Search</a>
+        <a href="#" data-open-panel="cart">Cart (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-overlay" data-overlay hidden></div>
+
+  <aside class="panel panel--left" data-panel="menu" aria-hidden="true">
+    <div class="panel__header">
+      <h2>Navigation</h2>
+      <button class="icon-close" type="button" aria-label="Close navigation" data-close-panel>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="panel__body panel__body--menu" id="menuPanelBody"></div>
+  </aside>
+
+  <aside class="panel panel--center panel--search" data-panel="search" aria-hidden="true">
+    <div class="panel__header panel__header--search">
+      <h2>Search</h2>
+      <button class="icon-close" type="button" aria-label="Close search" data-close-panel>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="panel__body">
+      <form class="search-form" action="https://www.moreislove.com/search" method="get" role="search">
+        <label class="sr-only" for="searchInput">Search for products</label>
+        <input id="searchInput" type="search" name="q" placeholder="Search for..." autocomplete="off">
+        <button class="button button--solid" type="submit">Search</button>
+      </form>
+    </div>
+  </aside>
+
+  <aside class="panel panel--right panel--cart" data-panel="cart" aria-hidden="true">
+    <div class="panel__header">
+      <h2>Shopping Bag</h2>
+      <button class="icon-close" type="button" aria-label="Close cart" data-close-panel>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="panel__body panel__body--cart">
+      <p class="cart-empty-title">Your bag is empty</p>
+      <p class="cart-empty-copy">Use the sections below to browse the featured products from the home page.</p>
+    </div>
+  </aside>
+
+  <button class="currency-pill" type="button" aria-label="Selected currency">
+    <span class="currency-pill__mark" aria-hidden="true"></span>
+    <span>GEL</span>
+    <span class="currency-pill__arrow" aria-hidden="true"></span>
+  </button>
+
+  <main id="top">
+    <section class="hero" aria-label="Hero section">
+      <div class="hero__layout">
+        <div class="hero__media">
+          <div class="hero-slider" data-slider>
+            <figure
+              class="hero-slide is-active"
+              data-slide
+              aria-hidden="false"
+              style="--hero-image-scale: 1.16; --hero-image-position: center 28%;"
+            >
+              <a class="hero-slide__cta" href="https://www.moreislove.com/collections/new-in">Shop New In</a>
+              <div class="hero-slide__placeholder">
+                <span>Drop your first photo into</span>
+                <small>assets/hero-1.jpg</small>
+              </div>
+              <img
+                class="hero-slide__image"
+                src="assets/hero1.webp"
+                data-fallback-src="https://www.moreislove.com/cdn/shop/files/IMG_4431.jpg?v=1774451639&width=3584"
+                data-image
+                alt="Hero look one"
+                loading="eager"
+              >
+            </figure>
+
+            <figure
+              class="hero-slide"
+              data-slide
+              aria-hidden="true"
+              style="--hero-image-scale: 1.14; --hero-image-position: center 24%;"
+            >
+              <div class="hero-slide__placeholder">
+                <span>Drop your second photo into</span>
+                <small>assets/hero-2.jpg</small>
+              </div>
+              <img
+                class="hero-slide__image"
+                src="assets/hero2.webp"
+                data-fallback-src="https://www.moreislove.com/cdn/shop/files/IMG_4432.jpg?v=1774391686&width=1728"
+                data-image
+                alt="Hero look two"
+                loading="lazy"
+              >
+            </figure>
+
+            <div class="hero-slider__shade" aria-hidden="true"></div>
+
+            <div class="page-dots hero-slider__dots" aria-label="Hero navigation">
+              <button class="page-dots__dot is-active" type="button" data-dot="0" aria-label="Show first image" aria-pressed="true"></button>
+              <button class="page-dots__dot" type="button" data-dot="1" aria-label="Show second image" aria-pressed="false"></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--products">
+      <div class="section__inner container container--wide">
+        <div class="section-heading section-heading--center">
+          <h2>Curated Handbags</h2>
+        </div>
+
+        <div class="rail-shell">
+          <button
+            class="rail-button rail-button--prev"
+            type="button"
+            aria-label="Previous products"
+            data-scroll-target="handbagScroller"
+            data-scroll-dir="-1"
+            disabled
+          >
+            <span></span>
+          </button>
+
+          <div class="rail-viewport" id="handbagScroller">
+            <div class="product-rail" id="handbagGrid"></div>
+          </div>
+
+          <button
+            class="rail-button rail-button--next"
+            type="button"
+            aria-label="Next products"
+            data-scroll-target="handbagScroller"
+            data-scroll-dir="1"
+          >
+            <span></span>
+          </button>
+        </div>
+
+        <div class="section-actions">
+          <a class="button" href="https://www.moreislove.com/collections/bags-full-price-for-home-page">View all</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shipping-strip" aria-label="Shipping announcement">
+      <div class="shipping-strip__track">
+        <span>Free Shipping Within Georgia - 35 USD Flat Rate For International Shipping</span>
+        <span>Free Shipping Within Georgia - 35 USD Flat Rate For International Shipping</span>
+        <span>Free Shipping Within Georgia - 35 USD Flat Rate For International Shipping</span>
+      </div>
+    </section>
+
+    <section class="section section--look">
+      <div class="section__inner container container--wide">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">Shop</p>
+          <h2>The looks</h2>
+        </div>
+
+        <div class="shop-look">
+          <div class="shop-look__visual">
+            <img
+              src="https://www.moreislove.com/cdn/shop/files/IMG_4435.jpg?v=1774458414&width=2700"
+              alt="Shop the look"
+            >
+
+            <div class="shop-look__hotspots" aria-label="Look products">
+              <button class="shop-look__hotspot is-active" type="button" data-look-index="0" style="--spot-top:35%; --spot-left:24%;" aria-label="Show look item 1"></button>
+              <button class="shop-look__hotspot" type="button" data-look-index="1" style="--spot-top:51%; --spot-left:67%;" aria-label="Show look item 2"></button>
+              <button class="shop-look__hotspot" type="button" data-look-index="2" style="--spot-top:65%; --spot-left:30%;" aria-label="Show look item 3"></button>
+            </div>
+          </div>
+
+          <div class="shop-look__sidebar">
+            <div id="lookCard"></div>
+            <div class="page-dots page-dots--dark" id="lookDots" aria-label="Look navigation"></div>
+            <a class="button button--solid" id="lookButton" href="https://www.moreislove.com/products/bar-blazer">View product</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--featured">
+      <div class="section__inner container">
+        <div class="section-heading section-heading--center">
+          <h2>Product of the week</h2>
+        </div>
+
+        <div class="featured-product">
+          <div class="featured-product__gallery">
+            <div class="featured-gallery">
+              <figure class="featured-gallery__slide is-active" data-featured-slide>
+                <img src="https://www.moreislove.com/cdn/shop/files/0V4A7298.jpg?v=1774820784&width=2048" alt="Burgundy Jacket view 1">
+              </figure>
+              <figure class="featured-gallery__slide" data-featured-slide>
+                <img src="https://www.moreislove.com/cdn/shop/files/DSC_9076.jpg?v=1773759355&width=2000" alt="Burgundy Jacket view 2">
+              </figure>
+              <figure class="featured-gallery__slide" data-featured-slide>
+                <img src="https://www.moreislove.com/cdn/shop/files/DSC_9082.jpg?v=1773759355&width=2000" alt="Burgundy Jacket view 3">
+              </figure>
+              <figure class="featured-gallery__slide" data-featured-slide>
+                <img src="https://www.moreislove.com/cdn/shop/files/DSC_9079.jpg?v=1773759355&width=2000" alt="Burgundy Jacket view 4">
+              </figure>
+              <figure class="featured-gallery__slide" data-featured-slide>
+                <img src="https://www.moreislove.com/cdn/shop/files/0V4A7299.jpg?v=1773759355&width=2048" alt="Burgundy Jacket view 5">
+              </figure>
+            </div>
+
+            <div class="page-dots page-dots--dark">
+              <button class="page-dots__dot is-active" type="button" data-featured-dot="0" aria-label="Show featured image 1"></button>
+              <button class="page-dots__dot" type="button" data-featured-dot="1" aria-label="Show featured image 2"></button>
+              <button class="page-dots__dot" type="button" data-featured-dot="2" aria-label="Show featured image 3"></button>
+              <button class="page-dots__dot" type="button" data-featured-dot="3" aria-label="Show featured image 4"></button>
+              <button class="page-dots__dot" type="button" data-featured-dot="4" aria-label="Show featured image 5"></button>
+            </div>
+          </div>
+
+          <div class="featured-product__info">
+            <a class="product-vendor" href="https://www.moreislove.com/collections/vendors?q=SITUATIONIST">SITUATIONIST</a>
+            <h3 class="product-name">
+              <a href="https://www.moreislove.com/products/burgundy-jacket">Burgundy Jacket</a>
+            </h3>
+            <p class="product-price">GEL3,547</p>
+
+            <div class="product-copy">
+              <p>
+                Crafted from supple lambskin leather, this burgundy jacket delivers refined elegance with exceptional
+                comfort. The buttery-soft material drapes beautifully while maintaining structure, making it an
+                investment piece that transitions seamlessly from day to evening.
+              </p>
+              <p>100% Lambskin leather</p>
+              <p>Made in Georgia</p>
+            </div>
+
+            <div class="product-option">
+              <div class="product-option__label-row">
+                <span>Size</span>
+              </div>
+              <div class="size-picker">
+                <button class="size-picker__option is-active" type="button" data-size-option="34">34</button>
+                <button class="size-picker__option" type="button" data-size-option="36">36</button>
+                <button class="size-picker__option" type="button" data-size-option="38">38</button>
+                <button class="size-picker__option" type="button" data-size-option="40">40</button>
+              </div>
+            </div>
+
+            <div class="product-purchase">
+              <div class="quantity-picker" aria-label="Quantity">
+                <button class="quantity-picker__button" type="button" data-quantity-step="-1" aria-label="Decrease quantity">-</button>
+                <input class="quantity-picker__input" type="number" value="1" min="1" inputmode="numeric" aria-label="Quantity">
+                <button class="quantity-picker__button" type="button" data-quantity-step="1" aria-label="Increase quantity">+</button>
+              </div>
+
+              <button class="button button--solid button--full" type="button" data-add-to-bag>Add to cart</button>
+            </div>
+
+            <div class="pickup-box">
+              <p class="pickup-box__title">Pickup available at MORE is LOVE Store</p>
+              <p>Usually ready in 24 hours</p>
+              <p>14 Leo Kiacheli Street, Tbilisi, Georgia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--recent">
+      <div class="section__inner container">
+        <div class="section-heading section-heading--center">
+          <h2>Recently viewed products</h2>
+        </div>
+        <div class="product-grid" id="recentGrid"></div>
+      </div>
+    </section>
+
+    <section class="store-visit">
+      <div class="store-visit__media">
+        <img
+          src="https://www.moreislove.com/cdn/shop/files/T1B9012-Recovered.jpg?v=1765204388&width=2400"
+          alt="MORE is LOVE store"
+        >
+      </div>
+
+      <div class="store-visit__content">
+        <p class="eyebrow">Visit MORE is LOVE store</p>
+        <h2>Enjoy the full experience</h2>
+        <p>
+          14 Leo Kiacheli Street, Tbilisi, Georgia.<br>
+          Open daily: 11:00-20:00
+        </p>
+
+        <div class="button-row">
+          <a class="button button--solid" href="https://wa.me/995571888887">Contact us</a>
+          <a class="button" href="https://maps.app.goo.gl/P4sBK16YcXjKVQAFA">Get directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer-grid">
+        <div class="footer-block">
+          <h3>MORE is LOVE Flagship Store</h3>
+          <p>
+            14 Leo Kiacheli Street<br>
+            Tbilisi, Georgia
+          </p>
+          <p>
+            Open daily: 11:00-20:00<br>
+            Phone: +995 571 788 887<br>
+            Email: customercare@moreislove.com
+          </p>
+        </div>
+
+        <div class="footer-block">
+          <h3>Customer Care</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.moreislove.com/policies/shipping-policy">Shipping Policy</a></li>
+            <li><a href="https://www.moreislove.com/policies/refund-policy">Return &amp; Refund Policy</a></li>
+            <li><a href="https://www.moreislove.com/policies/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://www.moreislove.com/policies/terms-of-service">Terms of Service</a></li>
+            <li><a href="https://www.moreislove.com/policies/contact-information">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-block">
+          <h3>About Us</h3>
+          <p>
+            Founded in 2013, MORE is LOVE is a curated destination for emerging designers and contemporary fashion.
+            We champion independent creativity and exceptional craftsmanship, offering a global selection of
+            ready-to-wear, accessories, and jewelry.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/MoreIsLove/">Facebook</a>
+          <a href="https://www.instagram.com/moreislove/?hl=en">Instagram</a>
+          <a href="https://linkedin.com/company/more-is-love?originalSubdomain=ge">LinkedIn</a>
+          <a href="https://wa.me/995571888887">WhatsApp</a>
+        </div>
+        <p class="footer-copy">(c) 2026 - MORE is LOVE</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
