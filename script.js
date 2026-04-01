@@ -71,8 +71,8 @@ const handbagProducts = [
     title: "Beige & Khaki Medium Ibiza Beach Bag",
     price: "GEL970",
     href: `${site}/products/beige-khaki-ibiza-beach-bag`,
-    primary: `${site}/cdn/shop/files/T1B0059copy.png?v=1775033670&width=1400`,
-    secondary: `${site}/cdn/shop/files/T1B0061copy.png?v=1775033670&width=1400`
+    primary: "assets/handbag-01-primary.jpg",
+    secondary: "assets/handbag-01-secondary.jpg"
   },
   {
     vendor: "0711 Tbilisi",
@@ -80,8 +80,8 @@ const handbagProducts = [
     title: "Terracotta Large Ibiza Bag",
     price: "GEL1,481",
     href: `${site}/products/terracotta-large-ibiza-bag`,
-    primary: `${site}/cdn/shop/files/IbizaBeachBag1copy.png?v=1775032289&width=1400`,
-    secondary: `${site}/cdn/shop/files/3copy.png?v=1775032725&width=1400`
+    primary: "assets/handbag-02-primary.jpg",
+    secondary: "assets/handbag-02-secondary.jpg"
   },
   {
     vendor: "0711 Tbilisi",
@@ -89,8 +89,8 @@ const handbagProducts = [
     title: "Navy Blue Leslie Shoulder Bag",
     price: "GEL1,072",
     href: `${site}/products/navy-blue-leslie-shoulder-bag`,
-    primary: `${site}/cdn/shop/files/hf_20260331_103613_0f6de503-426d-4e56-b89b-df35c328cc56gasworebuli.png?v=1775035574&width=1400`,
-    secondary: `${site}/cdn/shop/files/hf_20260331_103517_b45b009e-5306-4025-b341-04f575cb0a13.png?v=1774957546&width=1400`
+    primary: "assets/handbag-03-primary.jpg",
+    secondary: "assets/handbag-03-secondary.jpg"
   },
   {
     vendor: "SITUATIONIST",
@@ -98,8 +98,8 @@ const handbagProducts = [
     title: "Black Bag",
     price: "GEL1,355",
     href: `${site}/products/brown-bag`,
-    primary: `${site}/cdn/shop/files/0V4A7148.jpg?v=1774981002&width=1400`,
-    secondary: `${site}/cdn/shop/files/DSC_9060.jpg?v=1773759212&width=1400`
+    primary: "assets/handbag-04-primary.jpg",
+    secondary: "assets/handbag-04-secondary.jpg"
   },
   {
     vendor: "0711 Tbilisi",
@@ -107,8 +107,8 @@ const handbagProducts = [
     title: "Ivory Strawberry Large Bag",
     price: "GEL800",
     href: `${site}/products/11480-ivory-strawberry-large-bag`,
-    primary: `${site}/cdn/shop/files/81eea4fc7d2b0b95c437a7d807df2468_dc367639-6779-4a05-8de1-b5bbeb271393.jpg?v=1767120969&width=1400`,
-    secondary: `${site}/cdn/shop/files/365efb85c4cc3abc9da99958680bdfb7_50ad2320-4498-4ca5-b8d3-2632d10d9b05.jpg?v=1767120969&width=1400`
+    primary: "assets/handbag-05-primary.jpg",
+    secondary: "assets/handbag-05-secondary.jpg"
   },
   {
     vendor: "0711 Tbilisi",
@@ -116,8 +116,8 @@ const handbagProducts = [
     title: "Champagne Thea Neck Bag",
     price: "GEL495",
     href: `${site}/products/13789-champagne-thea-neck-bag`,
-    primary: `${site}/cdn/shop/files/3c1e9dbf69e81c3caff47854189881b2.jpg?v=1767119650&width=1400`,
-    secondary: `${site}/cdn/shop/files/c6d7ac66895e588019de541d234089aa.jpg?v=1767119651&width=1400`
+    primary: "assets/handbag-06-primary.jpg",
+    secondary: "assets/handbag-06-secondary.jpg"
   }
 ];
 
@@ -128,8 +128,8 @@ const lookProducts = [
     title: "BAR BLAZER",
     price: "GEL2,349",
     href: `${site}/products/bar-blazer`,
-    primary: `${site}/cdn/shop/files/0V4A4385.jpg?v=1770905740&width=1400`,
-    secondary: `${site}/cdn/shop/files/T1B5189.jpg?v=1771857433&width=1400`
+    primary: "assets/look-01-primary.jpg",
+    secondary: "assets/look-01-secondary.jpg"
   },
   {
     vendor: "Aleksandre Akhalkatsishvili",
@@ -137,8 +137,8 @@ const lookProducts = [
     title: "Crystal Embellished Skirt Grey",
     price: "GEL2,698",
     href: `${site}/products/13774-crystal-embellished-skirt-grey`,
-    primary: `${site}/cdn/shop/files/0V4A4540.jpg?v=1768219409&width=1400`,
-    secondary: `${site}/cdn/shop/files/16_ec66cd49-35e4-4530-bf2f-4d3ec89a0b53.jpg?v=1769526974&width=1400`
+    primary: "assets/look-02-primary.jpg",
+    secondary: "assets/look-02-secondary.jpg"
   },
   {
     vendor: "0711 Tbilisi",
@@ -146,8 +146,8 @@ const lookProducts = [
     title: "Champagne Tebea Clutch",
     price: "GEL797",
     href: `${site}/products/11743-champagne-tebea-clutch`,
-    primary: `${site}/cdn/shop/files/b35f5f084df33216e0e5c752a55be03a_6f4e297f-4ccb-434a-9e4d-a30a8f88ca92.jpg?v=1767120677&width=1200`,
-    secondary: `${site}/cdn/shop/files/8e271c5767c0eb03927b89452c32c447_c29f484a-f660-4d92-96b8-344e28b7bae4.jpg?v=1767120677&width=1200`
+    primary: "assets/look-03-primary.jpg",
+    secondary: "assets/look-03-secondary.jpg"
   }
 ];
 
@@ -158,7 +158,7 @@ const recentProducts = [
     title: "Champagne Tiny Nino Tote",
     price: "GEL577",
     href: `${site}/products/13779-champagne-tiny-nino-tote`,
-    primary: `${site}/cdn/shop/files/e985022544da1e75d3b5ac514af89b1b.jpg?v=1767119657&width=1400`,
+    primary: "assets/recent-01-primary.jpg",
     secondary: ""
   },
   {
@@ -167,8 +167,8 @@ const recentProducts = [
     title: "Ivory & Champagne Medium Jodie Bag",
     price: "GEL962",
     href: `${site}/products/13755-ivory-26-champagne-medium-jodie-bag`,
-    primary: `${site}/cdn/shop/files/fd4adad5c47d14125b3f447e77cdacb5.jpg?v=1767119666&width=1400`,
-    secondary: `${site}/cdn/shop/files/244a9ebbbd418f30d74a4855a6bb64d7.jpg?v=1767119665&width=1400`
+    primary: "assets/recent-02-primary.jpg",
+    secondary: "assets/recent-02-secondary.jpg"
   },
   {
     vendor: "0711 Tbilisi",
@@ -176,8 +176,8 @@ const recentProducts = [
     title: "White Lizzie Clutch",
     price: "GEL742",
     href: `${site}/products/13735-white-lizzie-clutch`,
-    primary: `${site}/cdn/shop/files/b6552c4d0b7f86df76bd2a225427bc8c.jpg?v=1767119676&width=1400`,
-    secondary: `${site}/cdn/shop/files/611b87913c5b58816fc431187c6d67bd.jpg?v=1767119674&width=1400`
+    primary: "assets/recent-03-primary.jpg",
+    secondary: "assets/recent-03-secondary.jpg"
   },
   {
     vendor: "SITUATIONIST",
@@ -185,8 +185,8 @@ const recentProducts = [
     title: "Burgundy Jacket",
     price: "GEL3,547",
     href: `${site}/products/burgundy-jacket`,
-    primary: `${site}/cdn/shop/files/0V4A7298.jpg?v=1774820784&width=1400`,
-    secondary: `${site}/cdn/shop/files/DSC_9076.jpg?v=1773759355&width=1400`
+    primary: "assets/recent-04-primary.jpg",
+    secondary: "assets/recent-04-secondary.jpg"
   }
 ];
 
